@@ -19,7 +19,7 @@ body {
 }
 
 .titulo {
-    margin: 0px;
+    margin-left: 15px;
     color: #ffffff;
 }
 
@@ -44,7 +44,7 @@ body {
     color: rgb(255, 255, 255);
     display: flex;
     padding: 0;
-    font-size: 2.8vh;
+    font-size: 3vh;
 }
 
 /*Começo do banner*/
@@ -68,7 +68,7 @@ body {
 
 .banner2 {
     margin: 0vh;
-    height: 69vh;
+    height: 72vh;
     background-color: white;
     background-size: cover;
     align-items: center;
@@ -78,6 +78,7 @@ body {
     width: 50%;
     margin: 0vh 0vh 0vh 50vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -88,35 +89,65 @@ body {
     color: black;
 }
 
+.div_icon {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.figure {
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+    width: 165px;
+    display: flex;
+    height: 165px;
+    align-items: center;
+    justify-content: center;
+}
+
 .eficiencia {
     height: 24vh;
-    width: 24vh;
-    margin: 6vh 5vh 2vh 36vh;
+    border-radius: 15vh;
   
 }
 
 .conforto {
     height: 24vh;
-    width: 24vh;
-    margin: 5vh 5vh 2vh 26vh;
     
 }
 
+.li_f{
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 5px solid rgb(108, 214, 108);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+}
+
+
 .lucro {
-    height: 24vh;
-    width: 24vh;
-    margin: 5vh 5vh 2vh 22vh; 
+    /* align-self: center; */height: 24vh;
+    /* margin-right: 20px; */
 }
 
 .navbar_icon {
-    margin: 5vh 5vh 2vh 35vh; ;
-    width: 129vh;
-    list-style: none;
-    justify-content: space-between;
+    margin-left: 10%;
     display: flex;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vh;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 950px;
+    list-style: none;
+}
+
+figure{
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 8px;
+    justify-content: space-around;
 }
 
 .banner3 {
@@ -136,7 +167,7 @@ body {
 .milharal {
     position: absolute;
     height: 50vh;
-    margin: 20vh 0vh 0vh 4vh;
+    margin: 20vh 0vh 0vh 10vh;
     border-radius: 40vh;
 }
 
@@ -149,7 +180,7 @@ body {
 .texto3 {
     position: relative;
     margin-top: 11vh;
-    left: 98vh;
+    left: 105vh;
     width: 98vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4vh;
