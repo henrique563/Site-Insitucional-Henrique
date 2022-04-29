@@ -1,0 +1,166 @@
+body {
+    margin: 0px;
+    
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    width: 65px;
+    top: 18px;  
+    bottom: 0px;
+    left: 64px;
+}
+
+.titulo {
+    margin: 0px;
+    color: #ffffff;
+}
+
+.container {
+    width: 79%;
+    margin: auto;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    width: 85vh;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 0;
+    font-size: 2.8vh;
+}
+
+/*Começo do banner*/
+
+.banner {
+    margin: 0vh;
+    height: 66vh;
+    background-image: url("fundohome.jpg");
+    background-size: cover;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.mensagem {
+    margin: 30vh 0vh 0vh 6vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7vh;
+    color: white;
+    align-items: center;
+}
+
+.banner2 {
+    margin: 0vh;
+    height: 69vh;
+    background-color: white;
+    background-size: cover;
+    align-items: center;
+}
+
+.container2 {
+    width: 50%;
+    margin: 0vh 0vh 0vh 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vh;
+    color: black;
+}
+
+.eficiencia {
+    height: 24vh;
+    width: 24vh;
+    margin: 6vh 5vh 2vh 36vh;
+  
+}
+
+.conforto {
+    height: 24vh;
+    width: 24vh;
+    margin: 5vh 5vh 2vh 26vh;
+    
+}
+
+.lucro {
+    height: 24vh;
+    width: 24vh;
+    margin: 5vh 5vh 2vh 22vh; 
+}
+
+.navbar_icon {
+    margin: 5vh 5vh 2vh 35vh; ;
+    width: 129vh;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+}
+
+.banner3 {
+    margin: 0vh;
+    background-color: rgb(230, 230, 230);
+    height: 80vh;
+}
+
+.container3 {
+    width: 50%;
+    margin: 0vh 0vh 0vh 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.milharal {
+    position: absolute;
+    height: 50vh;
+    margin: 20vh 0vh 0vh 4vh;
+    border-radius: 40vh;
+}
+
+.titulo3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vh;
+    color: black;
+}
+
+.texto3 {
+    position: relative;
+    margin-top: 11vh;
+    left: 98vh;
+    width: 98vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.banner4 {
+    margin: 0vh;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+
