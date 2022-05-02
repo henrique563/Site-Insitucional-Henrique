@@ -76,7 +76,7 @@ body {
 
 .container2 {
     width: 50%;
-    margin: 0vh 0vh 0vh 50vh;
+    margin: 0.5vh 0vh 0vh 50vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,22 +101,11 @@ body {
 .figure {
     background-color: rgb(230, 230, 230);
     border-radius: 50%;
-    width: 165px;
+    width: 190px;
     display: flex;
-    height: 165px;
-    align-items: center;
+    height: 190px;
     justify-content: center;
-}
-
-.eficiencia {
-    height: 24vh;
-    border-radius: 15vh;
-  
-}
-
-.conforto {
-    height: 24vh;
-    
+    align-self: center; 
 }
 
 .li_f{
@@ -124,14 +113,30 @@ body {
     text-align: center;
     border-bottom: 5px solid rgb(108, 214, 108);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vh;
+    font-size: 4vh; 
 }
 
+.eficiencia {
+    height: 24vh;
+    align-self: center; 
+    
+  
+}
+
+.conforto {
+    height: 24vh;
+    align-self: center; 
+     
+    
+}
 
 .lucro {
-    /* align-self: center; */height: 24vh;
-    /* margin-right: 20px; */
+    height: 24vh;
+    align-self: center; 
+    
 }
+
+
 
 .navbar_icon {
     margin-left: 10%;
@@ -143,10 +148,10 @@ body {
 }
 
 figure{
-    height: 234px;
+    height: 280px;
+    width: 165px;
     display: flex;
     flex-direction: column;
-    column-gap: 8px;
     justify-content: space-around;
 }
 
@@ -167,7 +172,7 @@ figure{
 .milharal {
     position: absolute;
     height: 50vh;
-    margin: 20vh 0vh 0vh 10vh;
+    margin: 20vh 0vh 0vh 8vh;
     border-radius: 40vh;
 }
 
@@ -180,8 +185,8 @@ figure{
 .texto3 {
     position: relative;
     margin-top: 11vh;
-    left: 105vh;
-    width: 98vh;
+    left: 101vh;
+    width: 95vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4vh;
     color: rgb(0, 0, 0);
