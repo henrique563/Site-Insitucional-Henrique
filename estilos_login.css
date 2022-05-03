@@ -41,16 +41,15 @@ body {
 }
 
 a:hover.sair {
-    color: rgb(108, 214, 108);
-}
-
+    color: darkorange;
+    }
 
 /*Começo do banner*/
 
 .banner {
     margin: 0px;
     height: 600px;
-    overflow-y: auto;
+    width: 100%;
     display: flex;
     background-image: url("milharalsunset.jpg");
     background-size: cover;
@@ -68,10 +67,10 @@ a:hover.sair {
 
 .banner .card {
     background-color: rgb(255, 255, 255);
-    height: 513px;
-    width: 542px;
+    height: 480px;
+    width: 450px;
     border-radius: 60px;
-    margin: 23px 0px 0px 618px;
+    margin: 39px 439px 0px 448px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,63 +79,28 @@ a:hover.sair {
     font-size: 18px;
 }
 
-.inovacao {
+.novamente {
     margin: -14px 0px 25px 0px;
 }
 
-.banner .card1_1 {
-    margin: 13px 0px 0px -236px;
+.banner .card1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12px;
-}
-
-.banner .card1_2 {
-    margin: -284px 0px 0px 242px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 input {
     border-radius: 6px;
     background-color: white;
+    height: 20px;
+    width: 200px;
 }
 
 button {
     margin: 36px 0px -8px 12px;
     height: 30px;
     width: 100px;
-    background-color: rgb(108, 214, 108);
+    background-color: darkorange;
     border-radius: 6px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
-
-.banner .card2 {
-    background-color: rgba(230, 230, 230, 0.562);
-    height: 338px;
-    width: 450px;
-    border-bottom-left-radius: 60px;
-    border-top-left-radius: 60px;
-    margin: -424px 0px 0px 168px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-}
-
-.texto_cad {
-    margin: 0px 27px 0px 68px;
-}
-
-.titulo_texto_cad {
-    margin: 0px -28px 0px 35px;
-    text-align: center;
-    font-size: 40px;
-}
-
-
-
-
-

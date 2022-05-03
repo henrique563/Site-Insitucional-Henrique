@@ -13,18 +13,18 @@ body {
 .logo {
     position: absolute;
     width: 65px;
-    top: 18px;  
+    top: 17px;  
     bottom: 0px;
     left: 64px;
 }
 
 .titulo {
-    margin-left: 15px;
+    margin-left: 72px;
     color: #ffffff;
 }
 
 .container {
-    width: 79%;
+    width: 90%;
     margin: auto;
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar{
-    width: 85vh;
+    width: 102vh;
     list-style: none;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +45,24 @@ body {
     display: flex;
     padding: 0;
     font-size: 3vh;
+}
+
+.hover_cadastro {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover.hover_cadastro {
+    color: rgb(108, 214, 108);
+}
+
+.hover_login {
+    color: white;
+    text-decoration: none;
+}
+    
+a:hover.hover_login {
+    color: rgb(108, 214, 108);
 }
 
 /*Começo do banner*/
@@ -193,10 +211,25 @@ figure{
     text-align: justify;
 }
 
-.banner4 {
+.futher {
     margin: 0vh;
     background-color: rgb(0, 0, 0);
-    height: 100vh;
+    height: 80vh;
 }
+
+.logo_futher {
+    position: absolute;
+    width: 65px;
+    top: 17px;  
+    bottom: 0px;
+    left: 64px;
+}
+
+.titulo_futher {
+    margin-left: 72px;
+    color: #ffffff;
+}
+
+
 
 
