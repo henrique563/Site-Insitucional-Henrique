@@ -217,18 +217,39 @@ figure{
     height: 80vh;
 }
 
-.logo_futher {
+.logo2 {
     position: absolute;
     width: 65px;
-    top: 17px;  
+    top: 1545px;
     bottom: 0px;
     left: 64px;
 }
 
-.titulo_futher {
+.titulofuther {
     margin-left: 72px;
+    margin-top: 94px;
     color: #ffffff;
 }
+
+.titulofuther1_1 {
+    margin-left: -242px;
+    margin-top: 201px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+}
+
+
+.navbar2{
+    width: 177px;
+    margin: 255px 0px 0px -155px;
+    list-style: circle;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+
 
 
 
