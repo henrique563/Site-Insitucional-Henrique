@@ -12,10 +12,10 @@ body {
 
 .logo {
     position: absolute;
-    width: 65px;
-    top: 17px;  
+    width: 683px;
+    top: -145px;
     bottom: 0px;
-    left: 64px;
+    left: -203px;
 }
 
 .titulo {
@@ -53,7 +53,7 @@ body {
 }
 
 a:hover.hover_cadastro {
-    color: rgb(108, 214, 108);
+    color: red;
 }
 
 .hover_login {
@@ -62,116 +62,89 @@ a:hover.hover_cadastro {
 }
     
 a:hover.hover_login {
-    color: rgb(108, 214, 108);
+    color: red;
 }
 
 /*Começo do banner*/
 
 .banner {
     margin: 0vh;
-    height: 66vh;
-    background-image: url("fundohome.jpg");
+    height: 70vh;
+    padding: 0;
+    background-image: url("silvias14.jpg");
     background-size: cover;
+    background-position: 0px;
+    overflow-y: auto;
+    align-items: center;
+}
+
+ .bannerdobanner {
+    margin: 0vh;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    background-size: cover;
+    background-position: 0px;
     overflow-y: auto;
     align-items: center;
 }
 
 .mensagem {
-    margin: 30vh 0vh 0vh 6vh;
+    background-color:black;
+    margin: 32vh 0vh 0vh 83vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 7vh;
     color: white;
     align-items: center;
+    text-align: left;
 }
 
 .banner2 {
-    margin: 0vh;
-    height: 72vh;
-    background-color: white;
+    margin: 0;
+    height: 86vh;
+    background-color: rgb(0, 0, 0);
     background-size: cover;
-    align-items: center;
-}
-
-.container2 {
-    width: 50%;
-    margin: 0.5vh 0vh 0vh 50vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.titulo2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6vh;
-    color: black;
-}
-
-.div_icon {
-    margin-left: 10%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 80%;
-
 }
 
-.figure {
-    background-color: rgb(230, 230, 230);
-    border-radius: 50%;
-    width: 190px;
+/*.div_imagen1 {
+    width: 28vw;
+    margin: 0;
     display: flex;
-    height: 190px;
-    justify-content: center;
-    align-self: center; 
+}*/
+
+.subaru {
+    height: 86vh;
+    width: 28vw;
 }
 
-.li_f{
-    list-style-type: none;
+.div_titulomeio {
+    margin-top: 18px;
+    width: 390px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    border-bottom: 5px solid rgb(108, 214, 108);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vh; 
+    font-size: 4vh;
 }
-
-.eficiencia {
-    height: 24vh;
-    align-self: center; 
     
-  
+
+.charger {
+    height: 86vh;
+    width: 26vw;
 }
 
-.conforto {
-    height: 24vh;
-    align-self: center; 
-     
-    
-}
-
-.lucro {
-    height: 24vh;
-    align-self: center; 
-    
-}
-
-
-
-.navbar_icon {
-    margin-left: 10%;
+/*.div_imagen2 {
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 950px;
-    list-style: none;
-}
+}*/
 
-figure{
-    height: 280px;
-    width: 165px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+/*.charger {
+    margin: -603px -278px 16px 967px;
+    height: 85vh;
+    width: 28vw;
+}*/
 
 .banner3 {
     margin: 0vh;
@@ -230,6 +203,7 @@ figure{
     color: #ffffff;
 }
 
+/*<h3 class="textomeio">A TRE veio para todos aqueles apaixonados por carros, motores e velocidade. Um jamais visto antes, como uma única intenção: Correr!</h3>*/
 
 
 
