@@ -190,20 +190,44 @@ a:hover.hover_login {
     height: 80vh;
 }
 
-.logo_futher {
+.logo2 {
     position: absolute;
     width: 65px;
-    top: 17px;  
+    top: 1545px;
     bottom: 0px;
     left: 64px;
 }
 
-.titulo_futher {
+.titulofuther {
     margin-left: 72px;
+    margin-top: 94px;
     color: #ffffff;
 }
 
+<<<<<<< HEAD
 /*<h3 class="textomeio">A TRE veio para todos aqueles apaixonados por carros, motores e velocidade. Um jamais visto antes, como uma única intenção: Correr!</h3>*/
+=======
+.titulofuther1_1 {
+    margin-left: -242px;
+    margin-top: 201px;
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+}
+
+
+.navbar2{
+    width: 177px;
+    margin: 255px 0px 0px -155px;
+    list-style: circle;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+
+
+>>>>>>> 7324b9f0c2587b37634388114c366e7bb74b34d8
 
 
 
