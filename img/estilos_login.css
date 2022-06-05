@@ -41,7 +41,7 @@ body {
 }
 
 a:hover.sair {
-    color: darkorange;
+    color: red;
     }
 
 /*Começo do banner*/
@@ -51,7 +51,7 @@ a:hover.sair {
     height: 600px;
     width: 100%;
     display: flex;
-    background-image: url("milharalsunset.jpg");
+    background-image: url("skyline.jpg");
     background-size: cover;
     background-position: 0px;
 }
@@ -66,10 +66,9 @@ a:hover.sair {
 }
 
 .banner .card {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.733);
     height: 480px;
     width: 450px;
-    border-radius: 60px;
     margin: 39px 439px 0px 448px;
     display: flex;
     flex-direction: column;
@@ -80,10 +79,12 @@ a:hover.sair {
 }
 
 .novamente {
+    color: white;
     margin: -14px 0px 25px 0px;
 }
 
 .banner .card1 {
+    color: white; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
@@ -99,7 +100,7 @@ button {
     margin: 36px 0px -8px 12px;
     height: 30px;
     width: 100px;
-    background-color: darkorange;
+    background-color: red;
     border-radius: 6px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;

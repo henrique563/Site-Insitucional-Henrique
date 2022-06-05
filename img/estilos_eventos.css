@@ -47,6 +47,15 @@ body {
     font-size: 3vh;
 }
 
+.hover_index {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover.hover_index {
+    color: red;
+}
+
 .hover_cadastro {
     color: white;
     text-decoration: none;
@@ -69,86 +78,131 @@ a:hover.hover_login {
 
 .banner {
     margin: 0vh;
-    height: 70vh;
+    height: 60vh;
     padding: 0;
-    background-image: url("silvias14.jpg");
+    background-image: url("evento1.jpeg");
     background-size: cover;
     background-position: 0px;
-    overflow-y: auto;
-    align-items: center;
 }
 
  .bannerdobanner {
     margin: 0vh;
-    height: 70vh;
+    height: 60vh;
     background-color: rgba(0, 0, 0, 0.767);
     background-size: cover;
     background-position: 0px;
     overflow-y: auto;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.mensagem {
-    background-color:black;
-    margin: 32vh 0vh 0vh 83vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 7vh;
-    color: white;
-    align-items: center;
-    text-align: left;
-}
+/*Começo banner votação*/
 
 .banner2 {
     margin: 0;
-    height: 86vh;
+    height: 245vh;
     background-color: rgb(0, 0, 0);
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
 }
 
-/*.div_imagen1 {
-    width: 28vw;
-    margin: 0;
-    display: flex;
-}*/
-
-.subaru {
-    height: 86vh;
-    width: 28vw;
-}
-
-.div_titulomeio {
-    margin-top: 18px;
-    width: 390px;
-    color: #ffffff;
+.mensagem {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7vh;
+    color: white;
+}
+
+.div_title_evento {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-bottom: -31px;
+    
+}
+
+.mensagem2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7vh;
+    color: white;
+    margin-left: 30px;
+}
+
+.div_title_votacao {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 4vh;
-}
     
-
-.charger {
-    height: 86vh;
-    width: 26vw;
 }
 
-/*.div_imagen2 {
-    margin: 0;
-    display: flex;
-}*/
+.title_votacao {
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vh;
+    background-color: red;
+    margin-bottom: 50px;
+}
 
-/*.charger {
-    margin: -603px -278px 16px 967px;
-    height: 85vh;
-    width: 28vw;
-}*/
+.caixa_votacao {
+    width: 90%;
+    height: 250px;
+    border: 3px solid rgb(65, 65, 65);
+    margin-left: 4.2%;
+    margin-right: 5%;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.cxcarro1 {
+    height: 250px;
+    width: 400px;
+}
+
+.cxcarro {
+    height: 250px;
+}
+
+.texto_carro {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.tiago_romano {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+    width: 513px;
+}
+
+.div_btn {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vh;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+  } 
 
 .banner3 {
     margin: 0vh;
-    background-color: rgb(230, 230, 230);
     height: 80vh;
 }
 
@@ -163,8 +217,7 @@ a:hover.hover_login {
 .milharal {
     position: absolute;
     height: 50vh;
-    margin: 20vh 0vh 0vh 8vh;
-    border-radius: 40vh;
+    margin: 20vh 0vh 0vh 12vh;
 }
 
 .titulo3 {
@@ -179,55 +232,27 @@ a:hover.hover_login {
     left: 101vh;
     width: 95vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vh;
+    font-size: 4.2vh;
     color: rgb(0, 0, 0);
-    text-align: justify;
+    text-align: center;
 }
 
 .futher {
-    margin: 0vh;
+    margin: 0;
     background-color: rgb(0, 0, 0);
-    height: 80vh;
-}
-
-.logo2 {
-    position: absolute;
-    width: 65px;
-    top: 1545px;
-    bottom: 0px;
-    left: 64px;
-}
-
-.titulofuther {
-    margin-left: 72px;
-    margin-top: 94px;
-    color: #ffffff;
-}
-
-<<<<<<< HEAD
-/*<h3 class="textomeio">A TRE veio para todos aqueles apaixonados por carros, motores e velocidade. Um jamais visto antes, como uma única intenção: Correr!</h3>*/
-=======
-.titulofuther1_1 {
-    margin-left: -242px;
-    margin-top: 201px;
-    color: rgb(184, 184, 184);
-    font-size: 20px;
-}
-
-
-.navbar2{
-    width: 177px;
-    margin: 255px 0px 0px -155px;
-    list-style: circle;
-    color: rgb(255, 255, 255);
+    height: 15vh;
     display: flex;
-    flex-direction: column;
-    font-size: 17px;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.logo_futher {
+    height: 70px;
+    margin-left: 30px;
+}
 
-
->>>>>>> 7324b9f0c2587b37634388114c366e7bb74b34d8
-
-
-
+.copyright {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 30px;
+}

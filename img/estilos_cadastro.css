@@ -64,32 +64,35 @@ a:hover.sair {
     display: flex;
     background-color:rgba(0, 0, 0, 0.377);
     background-size: cover;
+    align-items: center;
+    justify-content: center;
 }
 
-.banner .card {
+.card {
     background-color: rgba(0, 0, 0, 0.733);
     height: 513px;
     width: 542px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .inovacao {
-    margin: -14px 0px 25px 0px;
+    margin: -401px -59px 30px 20px;
     color: white;
 }
 
 .banner .card1_1 {
-    margin: 13px 0px 0px -236px;
+    color: white;
+    margin: -20px 0px 0px -236px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
 }
 
 .banner .card1_2 {
+    color: white;
     margin: -284px 0px 0px 242px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;
@@ -101,7 +104,7 @@ input {
 }
 
 button {
-    margin: 36px 0px -8px 12px;
+    margin: 415px 138px -8px -135px;
     height: 30px;
     width: 100px;
     background-color: red;

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="estilos_cadastro.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <img src="volante branco.png" class="logo">&nbsp;&nbsp;&nbsp;&nbsp;
+            <span style="color: red;">|</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <h1 class="titulo_cadastro">Cadastro</h1>
+            <h3>
+                <a href="index.html" class="sair">Sair</a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>
+        <div class="banner1_2">
+            <div class="container2">
+                <div class="card">
+                    <h1 class="inovacao">Sinta essa emoção e corra!</h1>
+    
+                    <div class="card1_1">
+                        <h2>Nome:</h2> <input type="text" placeholder="Insira o seu nome completo" id="nome_input">
+                        <h2>Marca:</h2> <input type="text" placeholder="Insira a marca do carro" id="marca_input">
+                        <h2>Modelo:</h2> <input type="text" placeholder="Insira o modelo do carro" id="modelo_input">
+                        <h2>Email:</h2> <input type="text" placeholder="Insira um email" id="email_input">
+                        <h2>Senha</h2> <input type="text" placeholder="Insira uma senha" id="senha_input">
+                    </div>
+                    <button onclick="cadastrar()">CADASTRAR</button>
+                </div>
+    
+            </div>
+    
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
+<script>
+    function cadastrar() {
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var marcaVar = marca_input.value;
+        var modeloVar = modelo_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                marcaServer: marcaVar,
+                modeloServer: modeloVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+
+</script>
