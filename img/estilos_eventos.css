@@ -8,71 +8,42 @@ body {
     width: 100%;
     height: 100px;
     align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    position: absolute;
-    width: 683px;
-    top: -145px;
-    bottom: 0px;
-    left: -203px;
+    width: 65px;
 }
 
-.titulo {
-    margin-left: 72px;
+.titulo_cadastro {
     color: #ffffff;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .header .container {
     height: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
-.navbar{
-    width: 102vh;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
-    display: flex;
-    padding: 0;
-    font-size: 3vh;
-}
-
-.hover_index {
+.sair {
+    margin: 0px -500px 0px 474px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     text-decoration: none;
 }
 
-a:hover.hover_index {
+a:hover.sair {
     color: red;
 }
 
-.hover_cadastro {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover.hover_cadastro {
-    color: red;
-}
-
-.hover_login {
-    color: white;
-    text-decoration: none;
-}
-    
-a:hover.hover_login {
-    color: red;
-}
 
 /*Começo do banner*/
 
@@ -101,7 +72,7 @@ a:hover.hover_login {
 
 .banner2 {
     margin: 0;
-    height: 245vh;
+    height: 252vh;
     background-color: rgb(0, 0, 0);
     background-size: cover;
 }
