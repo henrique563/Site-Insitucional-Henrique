@@ -31,8 +31,20 @@ function cadastrar(nome, marca, modelo, email, senha) {
     return database.executar(instrucao);
 }
 
+function cadastrarV(fkCarro, idUsuario) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", fkCarro, idUsuario);
+
+    // Só copiar esse update e substituir os nomes pra se adequar na sua tabela. A premissa da votação é a mesma
+    var instrucao = `
+        UPDATE usuario set fkCarro = '${fkCarro}' WHERE idUsuario = '${idUsuario}';
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
+    cadastrarV,
 };

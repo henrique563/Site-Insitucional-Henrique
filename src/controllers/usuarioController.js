@@ -100,9 +100,42 @@ function cadastrar(req, res) {
     }
 }
 
+
+function cadastrarV(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var fkCarro = req.body.fkCarroServer;
+    var idUsuario = req.body.idUsuarioServer;
+
+    // Faça as validações dos valores
+    if (fkCarro == undefined) {
+        res.status(400).send("Seu fkCarro está undefined!");
+    } else if (idUsuario == undefined) {
+        res.status(400).send("Seu idUsuario está undefined!");
+    } else {
+        
+        // Mesma coisa, só mudar o nome se quiser
+        usuarioModel.cadastrarV(fkCarro, idUsuario)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    cadastrarV
 }
