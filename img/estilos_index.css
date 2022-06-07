@@ -37,7 +37,7 @@ body {
 }
 
 .navbar{
-    width: 102vh;
+    width: 74vh;
     list-style: none;
     align-items: center;
     justify-content: space-between;
@@ -45,6 +45,15 @@ body {
     display: flex;
     padding: 0;
     font-size: 3vh;
+}
+
+.hover_custom {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover.hover_custom {
+    color: red;
 }
 
 .hover_cadastro {

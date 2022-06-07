@@ -8,169 +8,131 @@ body {
     width: 100%;
     height: 100px;
     align-items: center;
-    justify-content: center;
 }
 
 .logo {
-    width: 65px;
+    position: absolute;
+    width: 683px;
+    top: -145px;
+    bottom: 0px;
+    left: -203px;
 }
 
-.titulo_cadastro {
+.titulo {
+    margin-left: 72px;
     color: #ffffff;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     margin: auto;
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
 .header .container {
     height: 100%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-.sair {
-    margin: 0px -500px 0px 474px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.navbar{
+    width: 74vh;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 0;
+    font-size: 3vh;
+}
+
+.hover_home {
     color: white;
     text-decoration: none;
 }
 
-a:hover.sair {
+a:hover.hover_home {
     color: red;
 }
 
+.hover_cadastro {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover.hover_cadastro {
+    color: red;
+}
+
+.hover_login {
+    color: white;
+    text-decoration: none;
+}
+    
+a:hover.hover_login {
+    color: red;
+}
 
 /*Começo do banner*/
 
 .banner {
     margin: 0vh;
-    height: 60vh;
+    height: 86vh;
     padding: 0;
-    background-image: url("evento1.jpeg");
-    background-size: cover;
-    background-position: 0px;
+    overflow-y: auto;
+    align-items: center;
 }
 
  .bannerdobanner {
     margin: 0vh;
-    height: 60vh;
+    height: 86vh;
     background-color: rgba(0, 0, 0, 0.767);
     background-size: cover;
     background-position: 0px;
     overflow-y: auto;
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-/*Começo banner votação*/
-
-.banner2 {
-    margin: 0;
-    height: 252vh;
-    background-color: rgb(0, 0, 0);
-    background-size: cover;
 }
 
 .mensagem {
+    margin: 41vh 0vh 0vh 75vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 7vh;
     color: white;
-}
-
-.div_title_evento {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    margin-bottom: -31px;
-    
-}
-
-.mensagem2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 7vh;
-    color: white;
-    margin-left: 30px;
-}
-
-.div_title_votacao {
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
-
-.title_votacao {
-    color: white;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5vh;
-    background-color: red;
-    margin-bottom: 50px;
-}
-
-.caixa_votacao {
-    width: 90%;
-    height: 250px;
-    border: 3px solid rgb(65, 65, 65);
-    margin-left: 4.2%;
-    margin-right: 5%;
-    margin-top: 10px;
-    display: flex;
-
-}
-
-.cxcarro1 {
-    height: 250px;
-    width: 400px;
-}
-
-.cxcarro {
-    height: 250px;
-}
-
-.texto_carro {
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: left;
 }
 
-.tiago_romano {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4vh;
-    width: 777px;
+.banner2 {
+    margin: 0;
+    height: 86vh;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
 }
 
-.div_btn {
-    margin-top: 24px;
-    display: flex;
+.subaru {
+    height: 86vh;
+    width: 28vw;
+}
+
+.div_titulomeio {
+    margin-top: 18px;
+    width: 390px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-size: 4vh;
 }
+    
 
-.btn {
-    background-color: red;
-    color: white;
-    height: 50px;
-    width: 120px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5vh;
-    border-radius: 10px;
+.charger {
+    height: 86vh;
+    width: 26vw;
 }
-
-.btn:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;
-  } 
 
 .banner3 {
     margin: 0vh;
