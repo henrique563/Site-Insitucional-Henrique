@@ -1,14 +1,35 @@
 var medidaModel = require("../models/medidaModel");
 
+function votar(req, res) {
+
+    const limite_linhas = 5;
+
+    var idCarro = req.params.idCarro;
+
+    console.log(`Votando`);
+
+    medidaModel.votar(idCarro).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar os últimos votos.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
 function buscarUltimasMedidas(req, res) {
 
-    const limite_linhas = 7;
+    const limite_linhas = 5;
 
-    var idAquario = req.params.idAquario;
+    var idCarro = req.params.idCarro;
 
     console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
 
-    medidaModel.buscarUltimasMedidas(idAquario, limite_linhas).then(function (resultado) {
+    medidaModel.buscarUltimasMedidas(idCarro, limite_linhas).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -24,11 +45,11 @@ function buscarUltimasMedidas(req, res) {
 
 function buscarMedidasEmTempoReal(req, res) {
 
-    var idAquario = req.params.idAquario;
+    var idCarro = req.params.idCarro;
 
     console.log(`Recuperando medidas em tempo real`);
 
-    medidaModel.buscarMedidasEmTempoReal(idAquario).then(function (resultado) {
+    medidaModel.buscarMedidasEmTempoReal(idCarro).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -42,6 +63,7 @@ function buscarMedidasEmTempoReal(req, res) {
 }
 
 module.exports = {
+    votar,
     buscarUltimasMedidas,
     buscarMedidasEmTempoReal
 

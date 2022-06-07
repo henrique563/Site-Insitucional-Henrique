@@ -20,8 +20,4 @@ router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
 
-router.post("/cadastrarV", function (req, res) {
-    usuarioController.cadastrarV(req, res);
-});
-
 module.exports = router;

@@ -115,7 +115,7 @@
         </div>
 
         <div class="div_btn">
-            <button onclick="cadastrarV()" class="btn">VOTAR NESSE</button>
+            <button onclick="Votar()" class="btn">VOTAR NESSE</button>
         </div>
         
     </div>
@@ -164,33 +164,101 @@
             fkCarro.splice(0, 1, "1004")
 
         }
-    
-        // Function que vai encaminhar o voto pro Banco de Dados. Pode só copiar a function do cadastro e ir mudando o nome.
-        function cadastrarV() {
-    
-            // Criar variável com o valor do vetor. "0" é a posição dele, que no caso é o primeiro valor
-            var fkCarroVar = fkCarro[0];
-    
-            // Só mudar o nome do cadastrarv, como eu falei
-            fetch("/usuarios/cadastrarv", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    // Agora é padrão, como se fosse criar um novo caminho
-                    // Agora vá para o arquivo routes/usuario.js
-                    fkCarroServer: fkCarroVar,
-                    idUsuarioServer: sessionStorage.ID_USUARIO
-                })
+
+        function Votar(idCarro) {
+            console.log('Entrei no Votar')
+            fetch(`/medidas/votar/${idCarro}`, { cache: 'no-store' }).then(function (response) {
+                console.log('To no fetch')
+                if (response.ok) {
+                    alert('Você votou');
+                    obterDadosGrafico(idCarro);
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
             })
-                .catch(function (errinho) {
-                    console.error(errinho)
-                })
-    
-            console.log()
+                .catch(function (error) {
+                    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+                });
         }
+
+        function obterDadosGrafico(idCarro) {
+            console.log('Entrei no Votar')
+            fetch(`/medidas/ultimas/${idCarro}`, { cache: 'no-store' }).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (resposta) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        resposta.reverse();
+
+                        plotarGrafico(resposta, idCarro);
+                    });
+                    
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+                .catch(function (error) {
+                    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+                });
+        }
+
+        function plotarGrafico(resposta, idCarro) {
+            console.log('Iniciando plotagem do gráfico...')
+            
+            var dados = {
+                labels: [],
+                datasets: [
+                    {
+                        yAxisID: 'y-idVotacao',
+                        label: 'Votos',
+                        borderColor: '#FFF',
+                        backgroundColor: ['white', 'red', 'black', 'green', '#1C1C1C', 'darkred'],
+                        fill: true,
+                        data: []
+                    }
+                ]
+            };
+
+            for (i= resposta.lenght-1; i >= 0; i--){
+                var registro = resposta[i];
+                dados.labels.push(registro.nomeCarro);
+                dados.datasets[0].data.push(resgistro.idVoto);
+                }
+
+                console.log(JSON.stringify(dados));
+
+                var ctx = canvas_grafico.getContext('2d');
+                window.grafico_linha = Chart.Bar (ctx, {
+                    data: dados,
+                    //Configurações do gráfico
+                    options: {
+                        responsive: true,
+                        animation: { duration: 500 },
+                        hoverMode: 'index',
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: 'Votação para melhor carro'
+                        },
+                        scales: {
+                            yAxes: [{
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                                id: 'y-idVotacao',
+                                ticks: {
+                                    beginAtZero: true,
+                                    min: 0,
+                                    max: 20
+                                }
+                            }],
+                        }
+                    }
+
+                });
+
+        }
+
     
-    </script>
+</script>
 
  
