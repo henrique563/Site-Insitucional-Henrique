@@ -258,6 +258,28 @@
 
         }
 
+        function atualizarGrafico(idCarro, dados) {
+            fetch(`/medidas/tempo-real/${idCarro}`, { cache: 'no-store' }).then(function (response){
+                if(response.ok) {
+                    response.json().then(function (novoRegistro) {
+
+                        console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
+                        console.log(`Dados atuais do gráfico: ${dados}`);
+
+                        window.grafico_linha.update();
+
+                        proxAtualizacao = setTimeout(() => atualizarGrafico(idCarro, dados), 2000);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    proximaAtualizacao = setTimeout(() => atualizarGrafico(idCarro, dados), 2000);
+                }
+            })
+                .catch(function (error) {
+                    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+                });
+        }
+
     
 </script>
 
